@@ -1,16 +1,16 @@
 ======================================================
 COE67-XXX Operating Systems - Lab 01 Report
-Name: 
-Student ID: 
+Name: Kritsana Pirom
+Student ID: 67109116
 ======================================================
 
 1. Hardware Baseline:
-- OS Version:
-- Number of CPU Cores:
-- Total RAM:
+- OS Version: Ubuntu 22.04.1 (Linux 6.8.0-1052-azure)
+- Number of CPU Cores: 2
+- Total RAM: 7.76 GB
 
 2. Observation (from htop during stress test):
-[Write your answer here]
+[The script mainly used one CPU core at nearly 100% because it was single-threaded.]
 
 3. Analysis:
-[Write your answer here]
+[Knowing the CPU and RAM limits helps prevent out-of-memory errors and allows us to choose suitable batch sizes and parallel workers when training with 500,000 images.]
