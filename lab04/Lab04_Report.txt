@@ -1,0 +1,20 @@
+COE67-222 Operating Systems - Lab 04 Report
+
+Name: Kritsana Pirom
+Student ID: 67109116
+
+1. The Deadlock:
+
+Model A held GPU 0 and waited for GPU 1. Model B held GPU 1 and waited for GPU 0. This Circular Wait caused the program to freeze.
+
+2. The Solution:
+
+Both models requested GPU 0 before GPU 1. This Lock Ordering removed Circular Wait, so both models completed successfully.
+
+3. Starvation vs Deadlock:
+
+Deadlock froze the program, while Starvation continued running. The Greedy Models ran about 20,000 times, but the Polite Model ran only 294 times. Aging increases the priority of waiting processes to improve fairness.
+
+4. Deadlock Detection & Recovery:
+
+The timeout detected that Model A waited too long. Model A released GPU 0, allowing Model B to continue and the system to recover.
