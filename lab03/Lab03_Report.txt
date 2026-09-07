@@ -1,0 +1,16 @@
+COE67-222 Operating Systems - Lab 03 Report
+
+Name: Kritsana Pirom
+Student ID: 67109116
+
+1. The Race Condition:
+
+The actual value was 100–101 instead of 200. The OS Scheduler switched threads during the read-modify-write operation, causing threads to overwrite the same shared value.
+
+2. Mutex vs. Semaphore:
+
+Mutex allows only one thread to access the buffer at a time. The empty and full semaphores count empty and filled slots. Mutex cannot count available slots.
+
+3. Deadlock Awareness:
+
+If the Producer locks the mutex before waiting for an empty slot, the Consumer cannot access the buffer. Both threads will wait, causing a deadlock.
