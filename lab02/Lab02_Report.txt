@@ -1,0 +1,17 @@
+1. Execution Time:
+
+* Sequential: 9.76 seconds
+* Multithreading: 9.42 seconds
+* Multiprocessing: 8.39 seconds
+
+2. CPU Observation:
+
+Threads mainly used one core, while Multiprocessing used multiple cores.
+
+3. GIL Analysis:
+
+The GIL limits CPU-bound threads. Multiprocessing bypasses the GIL and runs faster.
+
+4. Zombie Process:
+
+A zombie occurs when the parent does not collect the child’s status. Use os.wait() to prevent it.
